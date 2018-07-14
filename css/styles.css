@@ -1,8 +1,23 @@
-.header {
-    background-color: rgb(128, 173, 45);
+h1 {
+    font-family: 'Bad Script', cursive;
+    color: #07bf9f;
     text-align: center;
     padding: 20px;
+    size: 500px; 
 }
-<p> {
-    font: blue;
+
+p {
+    font: Times New Roman;
+}
+
+body {
+    background-color: #f3cfa6;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    width: 50%;
 }
