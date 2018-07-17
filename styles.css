@@ -13,7 +13,19 @@
     line-height: 2.5;
     overflow: hidden; 
     box-shadow: 2px 2px black;
-}
+} 
+
+/* .overlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 200px;
+    background: tomato;
+  } */
+  
 h1 {
     font-family: 'Neucha', cursive;
     size: 100em;
@@ -106,6 +118,7 @@ body, html {
     padding: 20px;
 }
 
+
 /* Footer */
 .footer {
     padding: 5px;
@@ -119,3 +132,6 @@ body, html {
         flex-direction: column;
     }
 }
+
+
+  
