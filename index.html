@@ -2,7 +2,6 @@
 <html>
 <head>
 <title>30 Acres School</title>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Link to CSS stylesheet and Google font -->
@@ -11,15 +10,13 @@
 </head>
 <body>
 
-<!-- Note -->
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>Snow is coming!</strong> Two-hour delay on Monday!
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
+<!-- Alert message at the top of the page -->
+<div id="alert">
+  Open House is on Monday!
+</div>
+
 <!-- Header -->
-<div class="header-image">
+<div class="header-image" alt: "Cows graze in the meadow at 30 Acres School.">
         <div class="header-text">
           <h1>30 Acres School</h1>
           <p>Southern Indiana's One-Room Schoolhouse</p>
@@ -29,30 +26,40 @@
 
 <!-- Navigation Bar -->
 <div class="navbar">
-  <a href="#">About</a>
-  <a href="#">Teachers</a>
-  <a href="#">Learning</a>
+  <a href="#about">About</a>
+  <a href="#teachers">Teachers</a>
+  <a href="#learning">Learning</a>
 </div>
 
-<!-- The flexible grid (content) -->
+<!-- Main Content -->
 
   <div class="about">
-      <h2>Character forged through learning</h2>
-      <p>Some might call us a <a target="_blank" href="https://medium.com/future-of-school/agile-in-education-an-intro-to-micro-schooling-c508c3bbc367">micro-school</a>. We call ourselves 30 Acres: a one-room schoolhouse nestled in the farmlands of Elizabeth, Indiana.</p>
+      <h2 id="about">Character forged through learning</h2>
+      <p>Some might call us a <a target="_blank" href="https://medium.com/future-of-school/agile-in-education-an-intro-to-micro-schooling-c508c3bbc367">micro-school</a>. <strong>We call ourselves 30 Acres: a one-room schoolhouse nestled in the farmlands of Elizabeth, Indiana.</strong></p>
+        <p>
+        Bible, good literature, Latin, mathematics, learning facts (Bible, history, etc.) in fun ways through music, art, story and drama, science with hands-on activities, penmanship -- yes, even cursive will be introduced and taught!  
+        Classical approach with a Charlotte Mason twist.  Balance.</p> 
+        </p>
   </div> 
   
   <div class="teachers">
-      <h2>Meet the Teach</h2>
-      <p>blah blah blah</p>
-  </div>
+      <h2 id="teachers">Meet the teachers</h2>
+      <p><strong>Mrs. Sheila</strong> has a BA in art education at the University of Cincinnati; several years of Christian classroom teaching (English, math, science, German, art, music, yearbook, physical education, and health!), home schooled children and taught art and music lessons for home schooled children.  Last year she did long term substitution for 8th, 9th and 10th grade English teaching Shakespeare.  Currently, she teaches at KaySera Farm home school art lessons at the farm, teaches flute at Lanesville, private piano and flute lessons as well as teaching preschool aged children and adult art lessons as well.  </p>
+      <p><strong>Mr. Doug</strong> is a graduate of Taylor University in Political Science, Philosophy,  and an associates in Business Administration.  He has worked in the financial world for over 25 years.  Has taught adult Sunday School classes.  Currently Mr. Doug writes weekly Bible studies and delivers them at the local library.  He is a polymath.</p>
+    </div>
 
   <div class="learning">
-      <h2>Learning</h2>
-      <p>Classical. Christian. Eclectic.</p>
+      <h2 id="learning">Latin is alive, and so is learning.</h2>
+      <p><strong>Classical. Christian. Eclectic.</strong></p>
+      <p>Searching for options in educating your child? Our community is a unique school setting on 30 acres of rejuvenated teaching farmland.
+        Recess will never be the same. Learn that Latin is most definitely alive. History is best taught through story. The young child is equipped to memorize facts. Math facts. History dates. Parts and Places.
+        Good literature that inspires great character. Speaking skills. Hands-on activities. Animal study. Shakespeare.
+        Art and music as a conduit to deeper learning within other subjects but also within curriculum to be discussed as an academic which deepens the process called thinking.
+        </p>
   </div>
 <!-- Footer -->
 <div class="footer">
-  <h2>Footer</h2>
+  <p>Join the conversation on <a target="_blank" href="https://www.facebook.com/groups/143046893039152">Facebook</a>.</p>
 </div>
 
 </body>
