@@ -15,17 +15,6 @@
     box-shadow: 2px 2px black;
 } 
 
-/* .overlay {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 200px;
-    width: 200px;
-    background: tomato;
-  } */
-  
 h1 {
     font-family: 'Neucha', cursive;
     size: 100em;
@@ -47,9 +36,10 @@ body, html {
     height: 100%;
 }
 
-/* The background image in the header */
+/* Header background image */
 .header-image {
     background-image: url("img/cows.jpg");
+    background-color: #078f73;
     height: 75%;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,13 +58,13 @@ body, html {
     text-shadow: 2px 2px black;
 }
 
-/* Style the top navigation bar */
+/* Top navigation bar */
 .navbar {
     display: flex;
     background-color: #078f73; 
 }
 
-/* Style the navigation bar links */
+/* Navigation bar links */
 .navbar a {
     color: white;
     padding: 14px 20px;
@@ -82,16 +72,10 @@ body, html {
     text-align: center;
 }
 
-/* Change color on hover */
+/* Change color on hover to milkweed color */
 .navbar a:hover {
     background-color: #e3e8da;
     color: black;
-}
-
-/* Column container */
-.row {  
-    display: flex;
-    flex-wrap: wrap;
 }
 
  /* Link */
@@ -110,14 +94,23 @@ body, html {
     background-color:#d7856f;
     width: 100%;
     padding: 20px;
+    margin: 0px;
 }
 
 .learning {
     background-color: #a89487;
     width: 100%;
     padding: 20px;
+    margin: 0px;
 }
 
+img {
+    display: float;
+    border-radius: 10px;
+    max-width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Footer */
 .footer {
@@ -126,10 +119,10 @@ body, html {
     background:#e3e8da;
 }
 
-/* Media Query - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+/* Mobile Responsiveness */
 @media screen and (max-width: 700px) {
-    .row, .navbar {   
-        flex-direction: column;
+.navbar {   
+    flex-direction: column;
     }
 }
 
