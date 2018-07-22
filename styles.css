@@ -78,7 +78,7 @@ body, html {
     color: black;
 }
 
- /* Link */
+ /* Link style */
  a { 
     color:#384667;
     font: bold;
@@ -104,13 +104,27 @@ body, html {
     margin: 0px;
 }
 
+/* Style images */
 img {
-    display: float;
+    float: left;
     border-radius: 10px;
     max-width: 20%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 2%;
 }
+
+/* Clearfix hack for images to look right */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+} 
+
+/* Make three images appear in a row with space between them */
+.img-container {
+    width: 33.3%; 
+    padding: 5px; 
+  }
 
 /* Footer */
 .footer {
@@ -121,10 +135,30 @@ img {
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 700px) {
-.navbar {   
+   /* Change navigation bar to column instead of a row */
+    .navbar {   
     flex-direction: column;
-    }
+        }
+
+    /* Make images larger and not left-aligned on small screens to be easier to see */
+
+  img {
+      max-width: 50%;
+  }
+
+  /* Make images appear in a column with space between them */
+.img-container {
+    display: inline-block;
+    max-width: 80%; 
+    padding: 5px; 
+  }
+
+    /* img {
+    display: block;
+    border-radius: 10px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;   
+    } */
 }
-
-
   
