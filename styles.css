@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+#alert {
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #F0E130;
+    text-align: center;
+    line-height: 2.5;
+    overflow: hidden; 
+    box-shadow: 2px 2px black;
+} 
+
+h1 {
+    font-family: 'Neucha', cursive;
+    size: 100em;
+}
+
+h2 {
+    font-family: 'Neucha', cursive;
+    size: 90em;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    background-color:  	#f3cfa6;
+}
+
+
+body, html {
+    height: 100%;
+}
+
+/* Header background image */
+.header-image {
+    background-image: url("img/cows.jpg");
+    background-color: #078f73;
+    height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Text in the middle of the image */
+.header-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+/* Top navigation bar */
+.navbar {
+    display: flex;
+    background-color: #078f73; 
+}
+
+/* Navigation bar links */
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change color on hover to milkweed color */
+.navbar a:hover {
+    background-color: #e3e8da;
+    color: black;
+}
+
+ /* Link style */
+ a { 
+    color:#384667;
+    font: bold;
+} 
+
+/* Main text box styles */
+.about {
+    background-color:#f3cfa6;
+    width: 100%;
+    padding: 20px;
+}
+.teachers {
+    background-color:#d7856f;
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
+}
+
+.learning {
+    background-color: #a89487;
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
+}
+
+/* Style images */
+img {
+    float: left;
+    border-radius: 10px;
+    max-width: 20%;
+    margin-left: auto;
+    margin-right: 2%;
+}
+
+/* Clearfix hack for images to look right */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+} 
+
+/* Make three images appear in a row with space between them */
+.img-container {
+    width: 33.3%; 
+    padding: 5px; 
+  }
+
+/* Footer */
+.footer {
+    padding: 5px;
+    text-align: center;
+    background:#e3e8da;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 700px) {
+   /* Change navigation bar to column instead of a row */
+    .navbar {   
+    flex-direction: column;
+        }
+
+    /* Make images larger and not left-aligned on small screens to be easier to see */
+
+  img {
+      max-width: 50%;
+  }
+
+  /* Make images appear in a column with space between them */
+.img-container {
+    display: inline-block;
+    max-width: 80%; 
+    padding: 5px; 
+  }
+
+    /* img {
+    display: block;
+    border-radius: 10px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;   
+    } */
+}
+  
